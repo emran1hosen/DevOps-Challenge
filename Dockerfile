@@ -38,8 +38,8 @@ RUN composer install
 RUN composer update
 
 # Copy existing application directory permissions
-RUN sudo chown -R www:www /var/www
-RUN sudo chmod -R 775 /var/www
+RUN chown -R www:www /var/www
+RUN chmod -R 775 /var/www
 
 # Change current user to www
 USER www

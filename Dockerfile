@@ -37,7 +37,6 @@ RUN mv /var/www/.env.example /var/www/.env
 # import your packages and create the vendor folder
 RUN composer install
 RUN composer update
-RUN php artisan key:generate
 
 # Copy existing application directory permissions
 RUN chown -R www:www /var/www

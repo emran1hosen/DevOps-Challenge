@@ -31,7 +31,8 @@ RUN groupadd -g 1000 www
 RUN useradd -u 1000 -ms /bin/bash -g www www
 
 # Copy existing application directory contents
-COPY ./app /var/www/
+#COPY ./app /var/www/
+COPY --chown=www:www ./app /var/www/
 
 # import your packages and create the vendor folder
 RUN composer install
@@ -40,7 +41,6 @@ RUN composer update
 # Copy existing application directory permissions
 RUN chown -R www:www /var/www
 RUN chmod -R 775 /var/www
-RUN chmod -R 777 storage && sudo chmod -R 777 bootstrap/cache
 
 # Change current user to www
 USER www

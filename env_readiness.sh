@@ -4,7 +4,7 @@ sudo apt-get update
 sudo apt-get install git -y
 #Clone repo
 cd /home/ubuntu
-sudo git clone https://github.com/111emran/devops-ipg.git
+sudo git clone https://github.com/emran1hosen/DevOps-Challenge.git
 #Give user permission to the code directory for executional purpose
 sudo chown -R ubuntu:ubuntu DevOps-Challenge
 #install dependencies i.e curl, php7.4 and composer 

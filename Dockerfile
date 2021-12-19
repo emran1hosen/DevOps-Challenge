@@ -40,6 +40,7 @@ RUN composer update
 # Copy existing application directory permissions
 RUN chown -R www:www /var/www
 RUN chmod -R 775 /var/www
+RUN chmod -R 777 storage && sudo chmod -R 777 bootstrap/cache
 
 # Change current user to www
 USER www

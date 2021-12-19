@@ -15,7 +15,7 @@ ii. Run command: docker-compose up -d
 
 If environment is not setup, run below command.
 
-i. sh env_readiness.sh
+i. sh local_env_setup.sh
 
 
 B. Provision the infra with terraform:

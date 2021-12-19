@@ -32,7 +32,6 @@ RUN useradd -u 1000 -ms /bin/bash -g www www
 
 # Copy existing application directory contents
 COPY ./app /var/www
-RUN mv /var/www/.env.example /var/www/.env
 
 # import your packages and create the vendor folder
 RUN composer install

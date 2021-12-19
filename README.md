@@ -12,6 +12,12 @@ i. Go to project directory “DevOps_ST_IP”
 
 ii. Run command: docker-compose up -d
 
+
+If environment is not setup, run below command.
+
+i. sh env_readiness.sh
+
+
 B. Provision the infra with terraform:
 
 i. Login to aws using AWS cli

@@ -32,10 +32,12 @@ RUN useradd -u 1000 -ms /bin/bash -g www www
 
 # Copy existing application directory contents
 COPY ./app /var/www
+RUN mv /var/www/app/.env.example /var/www/app/.env
 
 # import your packages and create the vendor folder
 RUN composer install
 RUN composer update
+RUN php artisan key:generate
 
 # Copy existing application directory permissions
 RUN chown -R www:www /var/www

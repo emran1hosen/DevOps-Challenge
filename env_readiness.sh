@@ -20,7 +20,6 @@ mv composer.phar /usr/local/bin/composer
 sudo chmod +x /usr/local/bin/composer
 #install laravel project dependencies and build the project
 cd /home/ubuntu/DevOps-Challenge/app/
-mv .env.example .env
 composer install
 composer update
 php artisan key:generate

@@ -4,7 +4,7 @@
 
 i. Install prerequisits wget, git, docker, docker-compose, terraform, aws cli.
 
-ii. Clone this git repo https://github.com/111emran/devops-ipg
+ii. Clone this git repo https://github.com/emran1hosen/DevOps-Challenge
 
 A. Build and run in local environment:
 

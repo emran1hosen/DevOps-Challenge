@@ -17,7 +17,7 @@ cd /home/ubuntu
 export COMPOSER_HOME="$HOME/.config/composer"
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
-chmod +x /usr/local/bin/composer
+sudo chmod +x /usr/local/bin/composer
 #install laravel project dependencies and build the project
 cd /home/ubuntu/DevOps-Challenge/app/
 mv .env.example .env

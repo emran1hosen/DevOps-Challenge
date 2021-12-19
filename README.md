@@ -13,9 +13,6 @@ i. Go to project directory “DevOps_ST_IP”
 ii. Run command: docker-compose up -d
 
 
-If environment is not setup, run below command.
-
-i. sh local_env_setup.sh
 
 
 B. Provision the infra with terraform:

@@ -13,16 +13,6 @@ sudo apt install curl -y
 sudo apt-get install php -y
 sudo apt-get install php7.4
 sudo apt-get install php7.4-mbstring php7.4-mysql php7.4-xml php7.4-curl php7.4-json php7.4-zip -y
-cd /home/ubuntu
-export COMPOSER_HOME="$HOME/.config/composer"
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
-chmod +x /usr/local/bin/composer
-#install laravel project dependencies and build the project
-cd /home/ubuntu/DevOps-Challenge/app/
-composer install
-composer update
-php artisan key:generate
 #Install docker and dependencies
 cd /home/ubuntu
 sudo apt-get update

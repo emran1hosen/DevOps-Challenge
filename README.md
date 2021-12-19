@@ -4,6 +4,8 @@
 
 i. Install prerequisits wget, git, docker, docker-compose, terraform, aws cli.
 
+
+
 ii. Clone this git repo https://github.com/emran1hosen/DevOps-Challenge
 
 A. Build and run in local environment:
@@ -18,6 +20,9 @@ ii. Run command: docker-compose up -d
 B. Provision the infra with terraform:
 
 i. Login to aws using AWS cli
+
+
+
 
 ii. Run below commands:
 
